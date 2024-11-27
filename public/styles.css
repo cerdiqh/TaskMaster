@@ -1,0 +1,142 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    color: #2d3436;
+}
+
+/* Center the content */
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Add smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading style */
+h1, h2 {
+    text-align: center;
+    color: #0984e3;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b2bec3;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    background: #6c5ce7;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #a29bfe;
+}
+
+/* Task list styling */
+ul#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#taskList li {
+    padding: 10px;
+    margin: 10px 0;
+    background: #dfe6e9;
+    border-left: 5px solid #0984e3;
+    border-radius: 6px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Slide-in animation for tasks */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Message styles */
+#error-message, #success-message {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#error-message {
+    background: #ff7675;
+    color: #fff;
+    border: 1px solid #d63031;
+}
+
+#success-message {
+    background: #55efc4;
+    color: #2d3436;
+    border: 1px solid #00b894;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+}

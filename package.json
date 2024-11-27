@@ -1,0 +1,28 @@
+{
+  "name": "taskmaster",
+  "version": "1.0.0",
+  "description": "TaskMaster is a role-based task management system for users and admins.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["task management", "nodejs", "express", "mongoose"],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "nodemon": "^3.0.1"
+  }
+}

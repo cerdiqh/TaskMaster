@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TaskMaster</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>TaskMaster</h1>
+        </header>
+
+        <!-- Login Section -->
+        <section id="auth">
+            <h2>Login</h2>
+            <div id="auth-message" aria-live="polite"></div>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Task Management Section -->
+        <section id="tasks" style="display: none;">
+            <h2>Your Tasks</h2>
+            <div id="tasks-message" aria-live="polite"></div>
+            <form id="taskForm">
+                <label for="title">Task Title</label>
+                <input type="text" id="title" name="title" placeholder="Task title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Task description" required></textarea>
+
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline">
+
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
