@@ -9,7 +9,12 @@
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["task management", "nodejs", "express", "mongoose"],
+  "keywords": [
+    "task management",
+    "nodejs",
+    "express",
+    "mongoose"
+  ],
   "author": "Your Name",
   "license": "ISC",
   "dependencies": {
@@ -18,6 +23,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.21.1",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1"
   },
